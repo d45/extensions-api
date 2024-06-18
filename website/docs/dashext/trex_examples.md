@@ -7,9 +7,9 @@ The best way to learn how to build your own extensions is to look at the sample 
 
 - To download the Extensions API SDK, if you have not already done so, see [Get Started](./trex_getstarted).
 
-- You can browse the sample code for the dashboard extensions in the [Samples](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard?=target="_blank") and the [Tutorial](https://github.com/tableau/extensions-api/tree/master/Tutorial/Dashboard?=target="_blank") folders on GitHub.
+- You can browse the sample code for the dashboard extensions in the [Samples](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard?=target="_blank") and the [Tutorial](https://github.com/tableau/extensions-api/tree/main/Tutorial/Dashboard?=target="_blank") folders on GitHub.
 
-- You can also create dashboard extensions using TypeScript. See the TypeScript dashboard sample code in [Samples-TypeScript](https://github.com/tableau/extensions-api/tree/master/Samples-Typescript/Dashboard?=target="_blank") on GitHub.
+- You can also create dashboard extensions using TypeScript. See the TypeScript dashboard sample code in [Samples-TypeScript](https://github.com/tableau/extensions-api/tree/main/Samples-Typescript/Dashboard?=target="_blank") on GitHub.
 
 - You can also check out the dashboard extensions from the community, see [Community Extensions](pathname:///community/).
 
@@ -22,37 +22,37 @@ The following instructions assume that you have already downloaded and extracted
 
 The dashboard extension samples are in the `Samples/Dashboard` folder. There is also a step-by-step tutorial you can follow in the `Tutorial` folder.
 
-The [Samples-Typescript](https://github.com/tableau/extensions-api/tree/master/Samples-Typescript/Dashboard) folder shows how you can use the Extensions API type definitions to create extensions in TypeScript. For more information, see [Use TypeScript with the Extensions API](../core/trex_typescript).
+The [Samples-Typescript](https://github.com/tableau/extensions-api/tree/main/Samples-Typescript/Dashboard) folder shows how you can use the Extensions API type definitions to create extensions in TypeScript. For more information, see [Use TypeScript with the Extensions API](../core/trex_typescript).
 
 
 
 
--   **[DataSources](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/DataSources?=target="_blank")** 
+-   **[DataSources](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/DataSources?=target="_blank")** 
      
     Shows how to use the `getDataSourcesAsync` function to find the names of the data sources for each worksheet in the dashboard. Like the Filtering sample, the DataSources sample makes use the `Promise.all` function to combine the promises from the asynchronous calls together, and then waits for them to resolve. 
  
--   **[Filtering](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/Filtering?=target="_blank")** 
+-   **[Filtering](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Filtering?=target="_blank")** 
 
      Demonstrates how to use the `getFiltersAsync` function to find and display the active filters in the dashboard and calls the `addEventListener` function to set a `FilterChanged` event on each workbook in the dashboard. Any time a filter value is changed, the extension refreshes the table that displays the active filters. 
 
--   **[Parameters](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/Parameters?=target="_blank")**
+-   **[Parameters](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Parameters?=target="_blank")**
      
-    Finds and displays all the parameters in the dashboard and then sets an event listener that waits for a parameter to change, which triggers a refresh. 
+    Finds and displays all the parameters in the dashboard and then sets an event listener that waits for a parameter to change, which triggers a refresh.
 
--   **[Settings](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/Settings?=target="_blank")**
+-   **[Settings](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/Settings?=target="_blank")**
  
      Uses the `settings` namespace to save settings (key-value pairs) for the extension. Demonstrates how you can save settings for each instance of an extension, which enables sharing common views of a workbook.  
 
--   **[UINamespaces](https://github.com/tableau/extensions-api/tree/master/Samples/Dashboard/UINamespace?=target="_blank")**
+-   **[UINamespaces](https://github.com/tableau/extensions-api/tree/main/Samples/Dashboard/UINamespace?=target="_blank")**
 
      Demonstrates how you can use the `UI` namespace to create a modal dialog box (or popup) that runs another extension, which allows users to interact and change the settings for the parent extension. This sample controls the background auto-refresh interval for data sources in a dashboard. 
 
 
-- **[Tutorial](https://github.com/tableau/extensions-api/tree/master/Tutorial/Dashboard?=target="_blank")**
+- **[Tutorial](https://github.com/tableau/extensions-api/tree/main/Tutorial/Dashboard?=target="_blank")**
 
      Walks you through the step-by-step process of creating and refining an extension that displays a summarized table of the currently selected marks.
 
-- **[Samples-Typescript](https://github.com/tableau/extensions-api/tree/master/Samples-Typescript/Dashboard?=target="_blank")**
+- **[Samples-Typescript](https://github.com/tableau/extensions-api/tree/main/Samples-Typescript/Dashboard?=target="_blank")**
 
     The **Samples-Typescript** folder shows how you can use the Extensions API type definitions to create extensions in TypeScript. The sample extensions include TypeScript versions of many of the JavaScript samples. For more information, see [Use the TypeScript samples](#use-the-typescript-samples) and [Use TypeScript with the Extensions API](../core/trex_typescript).
 
